@@ -1,0 +1,36 @@
+// Variables
+$primary-color: #3b82f6;
+$secondary-color: #8b5cf6;
+$text-color: #1f2937;
+$background-color: #ffffff;
+
+// Base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+// Custom utilities
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Mixins example
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  @include flex-center;
+}
